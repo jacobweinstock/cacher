@@ -160,7 +160,7 @@ func main() {
 
 	if err := server.ingest(ctx, api, facility); err != nil {
 		logger.Error(err)
-		panic(err)
+		//panic(err)
 	}
 
 	sigs := make(chan os.Signal, 1)
